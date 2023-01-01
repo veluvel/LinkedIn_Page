@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- log in -->
+	<div class="container">
+		<div class="loginform">
+			<form action="" id="Lform" onsubmit="return false">
+				<label for="username">Username</label>
+				<input type="text" id="logname">
+				<label for="password">Password</label>
+				<input type="password" id="logpwd">
+				<button onclick="veriFication()">Login</button>
+			</form>
+			<p id="shows"></p>
+			<p id="Newsign" class="displayNone">Don't have an account please SignIn
+				<button id="Newsign"  onclick="createAccount()">Create Account</button>
+			</p>
+			
+		</div>
+	</div>
+
+	<!-- sign up-->
+	<div class="container displayblock">
+		<div class="signup">
+			<form action="" id="Sform" onsubmit="return false">
+				<label for="Name">Name</label>
+				<input type="text" id="Sname">
+				<label for="Email">Email</label>
+				<input type="email" id="Semail">
+				<label for="password">Password</label>
+				<input type="password" name="" id="Spwd">
+				<label for="">Confirm Password</label>
+				<input type="password" id="Srepwd" >
+				<button onclick="signVerify()">Signup</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
